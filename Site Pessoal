@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kauã Thessari De Rezende - Página Inicial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Kaua Thessari De Rezende</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <img src="suafoto.jpeg" alt="Minha Foto" class="foto-perfil">
+         <h2>Sobre Mim</h2> 
+         <p>Me chamo Kauã estou cursando ciência da computação e atualmete estou no 2 semestre, gosto de trabalhar em equipe sou uma pessoa esforçada para aprender, minhas habilidades de hard skills são javaScript,Python e as softs skills são resiliência,trabalho em equipe e motivação,também sou uma pessoa esforçada para aprender e um bom ouvinte. <table</table></p>
+    </section>
+        
+
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <p>No momento não realizei nenhum trabalho exuberante assim, mas tenho ideias em mente para a realização de algo grande ali na frente, entre tanto realizei um trabalho no 1 semestre do curso que basicamente tivemos que projetar um game.</p>
+    </section>
+
+    <section id="contato">
+        <h2> 54 999521099 </h2>
+        <h3> Deixe aqui a baixo suas informações!</h3>
+        <form action="enviar_email.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <section id="formacao" class="education-section">
+        <h2>Formação</h2>
+        <div class="education-content">
+            <div class="education-item">
+                <img src="https://siteprincipal.azureedge.net/siteprincipal-container/assets/nossa_marca_133942fe90.jpg" alt="Logo Atitus" width="300" height="200">
+                <p><strong>Ciência da Computação</strong></p>
+                <p>2024 - 2028</p>
+                <a target="_blank" href="https://atitus.edu.br/">Acessar</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2>Projeto JogoAdvinhação</h2>
+        <div class="education-content">
+            <div class="education-item">
+                <p><strong>Projeto JogoAdvinhação</strong></p>
+                <p>18/09/2024</p>
+                <a target="_blank" href="https://github.com/Kauathessari/Atividade.java/blob/main/Trabalho">Acessar</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="Link do Linkedin" class="links">
+        <h2>Linkedin</h2>
+        <div class="education-content">
+            <div class="education-item">
+                <img src="c:\Users\1136116\Downloads\imagem Linkedin.jpeg" alt="Logo Linkedin" width="200" height="200" <p>
+                    <strong>Linkedin</strong></p>
+                <p>2024</p>
+                <a target="_blank" href="https://www.linkedin.com/in/kau%C3%A3-thessari-b06551302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Acessar</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kauã Thessari De Rezende. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+CSS
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1b1b1b; /* Fundo escuro */
+    color: #f1f1f1; /* Texto claro */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #d52b1e; /* Vermelho EA */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.foto-perfil {
+    width: 150px;
+    border-radius: 75px; /* Faz uma imagem circular */
+    border: 4px solid #d52b1e; /* Borda vermelha */
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.foto-linkedin {
+    width: 150px;
+    border-radius: 75px; /* Faz uma imagem quadricular */
+    border: 4px solid #d52b1e; /* Borda vermelha */
+    display: block;
+    margin: 0 auto 15px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #d52b1e; /* Cor do título */
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: #f1f1f1; /* Texto claro */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d52b1e; /* Borda vermelha */
+    border-radius: 5px;
+    background: #fff; /* Fundo claro para os campos */
+    color: #000; /* Texto escuro */
+}
+
+button {
+    padding: 10px;
+    background: #d52b1e; /* Vermelho EA */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #c4201b; /* Tom mais escuro ao passar o mouse */
+}
+
+.education-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.education-item {
+    text-align: center;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #282828; /* Fundo do footer */
+    color: #f1f1f1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
